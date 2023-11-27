@@ -1,17 +1,14 @@
-create database itlp;
-
-use itlp;
-
 CREATE TABLE rol_usuario
 (
 id_rol INT UNIQUE NOT NULL AUTO_INCREMENT,
-nombre_rol VARCHAR (35) NOT NULL,
+nombre_rol VARCHAR(35) NOT NULL,
 descripcion TEXT,
 CONSTRAINT pk_rol primary key(id_rol)
 );
 
- CREATE TABLE usuarios (
- id_usuario INT(6) UNIQUE AUTO_INCREMENT,
+CREATE TABLE usuarios 
+(
+ id_usuario INT UNIQUE AUTO_INCREMENT,
  nombre VARCHAR(30) NOT NULL,
  apellido_pat VARCHAR(30) NOT NULL,
  apellido_mat VARCHAR(30) NOT NULL,
